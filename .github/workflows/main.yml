@@ -8,6 +8,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to Nimbella
-        uses: ./ # Uses an action in the root directory
+        uses: actions/nimbella-deploy-action@v1
         with:
           nimbella-token: ${{ secrets.NIMBELLA_TOKEN }}
